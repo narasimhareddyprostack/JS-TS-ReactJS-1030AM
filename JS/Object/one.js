@@ -1,5 +1,8 @@
 let emp={
     "id":101,
-    name:"rahul"
+    name:"rahul",
+    sal:45000
 }
 console.log(emp)
+
+
