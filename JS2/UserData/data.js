@@ -499,7 +499,11 @@ let users=[{"id":1,"name":"Sheena","email":"sslisby0@nydailynews.com","gender":"
 {"id":499,"name":"Noak","email":"ndargiedu@indiatimes.com","gender":"Male"},
 {"id":500,"name":"Remington","email":"rmcgeachiedv@deliciousdays.com","gender":"Male"}]
 
-function display_UserData(){
+/* function display_UserData(){
+    
+}
+ */
+let display_UserData = ()=>{
     let rows=""
     for(user of users){
         rows = rows + `<tr>
