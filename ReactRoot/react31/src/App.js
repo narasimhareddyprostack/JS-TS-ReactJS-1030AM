@@ -1,18 +1,9 @@
-
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Message from './components/Message'
+import Navbar from './Navbar/Navbar'
+import Movies from './Movies/Movie'
 function App(){
-    
-    
     return <div>
-        <h1>App Compononent</h1>
-
-        <Header/>
-            <Message/>
-        <Footer/>
-       
+        <Navbar/>
+        <Movies>Test</Movies>
     </div>
 }
-
 export default App
