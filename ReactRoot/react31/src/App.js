@@ -1,10 +1,11 @@
-import Message from "./StateEx/Message"
+import Product from "./StateEx/Product"
+import Navbar from "./Navbar"
 function App() {
   return (
     <div>
-        <h2>App Component</h2>
-        <hr />
-       <Message/>
+        <Navbar/>
+       
+       <Product/>
     </div>
   )
 }
