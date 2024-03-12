@@ -10,14 +10,14 @@ class Product extends React.Component{
           
  
     }
-      incrHandler = ()=>{ 
-
-        this.setState({product:{ ...this.state.product ,qty:this.state.product.qty +1 }})
-        console.log(this.state.product)
-           }
-      decrHandler = ()=>{     
-         this.setState({product:{ ...this.state.product ,qty:this.state.product.qty  - 1 }})
-       }
+      incrHandler = ()=>{
+        this.setState({product:{...this.state.product,qty:this.state.product.qty +1}})
+      }
+      decrHandler = ()=>{
+         this.setState({
+           
+        })
+      }
 
     render(){
         return <Fragment>
@@ -26,14 +26,11 @@ class Product extends React.Component{
                 <div className="col-md-10">
                     <table className='table'>
                         <thead>
-                            <tr>
                             <th>Name</th>
                             <th>Image</th>
                             <th>Price</th>
                             <th>QTY</th>
                             <th>Total</th>
-                            </tr>
-                           
                         </thead>
                         <tbody>
                             <tr>
