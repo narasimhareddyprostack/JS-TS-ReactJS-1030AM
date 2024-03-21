@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import Login from './FormHandling/Login'
-import Message from './Hooks/Message'
-import Counter from './Hooks/Counter'
-import Users from './Hooks/Users'
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>App component</h1>
-        <hr />
-        <Users/>
-      </div>
-    )
-  }
+import React, { Fragment } from 'react'
+import Navbar from './Navbar/Navbar'
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
+import Home from './ContactApp/Home'
+import ContactApp from './ContactApp/ContactApp'
+const App = () => {
+  return <Fragment>
+    <Router>
+    <Navbar/>
+    <Routes>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/contact" element={<ContactApp/>}/>
+    </Routes>
+    </Router>
+  </Fragment>
 }
 
 export default App
