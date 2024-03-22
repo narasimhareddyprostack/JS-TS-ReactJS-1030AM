@@ -1,20 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const ContactDetails = (data) => {
-  return (
-    <div>
-       {/*  <h1>ContactDetails</h1> */}
-        {/* <pre>{JSON.stringify(data)}</pre> */}
-        <div className="card">
-            <div className="card-header">
-                <img src={data.contact.picture.large} alt="" />
-            </div>
-            <div className="card-body">
-                <h3>{data.contact.name.first}</h3>
-            </div>
-        </div>
-    </div>
-  )
+class ContactDetails extends Component {
+  render() {
+    return (
+      <div>
+      <h3>ContactDetails</h3>
+      <pre>{JSON.stringify(this.props)}</pre>
+      <div className="card">
+      <div className="card-header">
+      <img src={this.props.contact.picture.large} alt="" />
+      </div>
+      <div className="card-body"></div>
+      </div>
+      </div>
+    )
+  }
 }
 
 export default ContactDetails
