@@ -1,18 +1,16 @@
-import React, { Fragment } from 'react'
-import Navbar from './Navbar/Navbar'
-import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
-import Home from './ContactApp/Home'
-import ContactApp from './ContactApp/ContactApp'
+import React from 'react'
+import Message from './Message/Message'
+
+import {store} from './redux/store'
+import {Provider} from 'react-redux'
 const App = () => {
-  return <Fragment>
-    <Router>
-    <Navbar/>
-    <Routes>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/contact" element={<ContactApp/>}/>
-    </Routes>
-    </Router>
-  </Fragment>
+  return <div>
+  <Provider store={store}>
+      <h1>App Component</h1>
+      <Message/>
+  </Provider>
+  
+  </div>
 }
 
 export default App
