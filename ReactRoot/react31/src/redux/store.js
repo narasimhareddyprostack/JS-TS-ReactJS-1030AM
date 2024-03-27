@@ -1,7 +1,6 @@
-import { createStore } from "redux";
+import {createStore} from 'redux'
+import {productReducer} from './product/product.reducer'
 import {composeWithDevTools} from '@redux-devtools/extension'
-import {msgReducer} from './msg/msg.reducer'
-
-let store=createStore(msgReducer,composeWithDevTools())
+let store= createStore(productReducer, composeWithDevTools())
 
 export {store}
