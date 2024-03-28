@@ -1,6 +1,8 @@
-import {createStore} from 'redux'
-import {productReducer} from './product/product.reducer'
+import { createStore,applyMiddleware } from "redux";
+import {userReducer} from './user/user.reducer'
 import {composeWithDevTools} from '@redux-devtools/extension'
-let store= createStore(productReducer, composeWithDevTools())
+import {thunk} from 'redux-thunk'
+import logger from 'redux-logger'
+let store=createStore(userReducer,composeWithDevTools(applyMiddleware(thunk,logger)))
 
 export {store}
