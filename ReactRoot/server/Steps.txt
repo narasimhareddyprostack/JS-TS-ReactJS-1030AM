@@ -1,0 +1,12 @@
+Step 1: instal mongoDB
+Step 2: Clone git project
+git clone https://github.com/narasimhareddyprostack/product-cart.git
+
+step 3: install depencies and run server
+       >npm i
+       >npm i nodemon
+	check the folder path
+        server>package.json
+	>npm start
+step 4: Test -Product Crud API
+          
