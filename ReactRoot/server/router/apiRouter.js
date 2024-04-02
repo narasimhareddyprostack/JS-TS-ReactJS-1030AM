@@ -43,7 +43,7 @@ router.get('/products/:id', async (request , response) => {
 
 /*
     USAGE : Create a Product
-    URL :   http://127.0.0.1:5000/api/products/
+    URL :   
     Method : POST
     Fields : name , image , price , qty , info
  */

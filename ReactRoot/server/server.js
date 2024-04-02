@@ -19,7 +19,7 @@ const hostname = process.env.HOST_NAME;
 const port = process.env.PORT;
 
 app.get('/', (request, response) => {
-    response.send(`<h2>Welcome to Cart</h2>`);
+    response.send(`<h2>Welcome to Pro Stack</h2>`);
 });
 
 // connect to Mongo DB Database
